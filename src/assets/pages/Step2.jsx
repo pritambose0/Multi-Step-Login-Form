@@ -86,7 +86,7 @@ function Step2() {
                   <img
                     src={URL.createObjectURL(selectedImage)}
                     alt="Selected"
-                    className="overflow-hidden h-36 w-36 rounded-full bg-cover bg-center"
+                    className="overflow-hidden h-36 w-36 rounded-full"
                   />
                 )}
                 {selectedImage && (
@@ -126,7 +126,7 @@ function Step2() {
 
           <div className="flex flex-col justify-start items-center md:items-start gap-10 w-[70%] md:w-full">
             <h3 className="text-lg font-black">Add your location</h3>
-            <div>
+            <div className="w-full">
               <Input
                 type="text"
                 placeholder="Enter a location"
