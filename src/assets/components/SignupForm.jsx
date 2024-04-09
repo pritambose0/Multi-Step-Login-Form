@@ -119,7 +119,7 @@ function Form({ children }) {
 
         <div>
           <Input
-            type="text"
+            type="password"
             label="Password"
             placeholder="6+ characters"
             className="w-full"
