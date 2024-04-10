@@ -18,7 +18,6 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
   const avatar = useSelector(state => state.avatar)
-  console.log(avatar);
 
   return (
     <>
@@ -70,7 +69,7 @@ function Navbar() {
               )}
               {avatar && (
                 <img
-                  src={avatar}
+                  src={URL.createObjectURL(avatar)}
                   alt="avatar"
                   className="w-9 h-9 rounded-full flex items-center justify-center"
                 />
@@ -137,6 +136,14 @@ function Navbar() {
                 >
                   Hire Designers
                 </Link>
+
+                {avatar && (
+                <img
+                  src={URL.createObjectURL(avatar)}
+                  alt="avatar"
+                  className="w-9 h-9 ml-2 rounded-full flex items-center justify-center"
+                />
+              )}
               </div>
             </div>
           </>

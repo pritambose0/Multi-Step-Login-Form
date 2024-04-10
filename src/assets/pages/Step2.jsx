@@ -20,7 +20,7 @@ function Step2() {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm({ defaultValues: { avatar, location } });
+  } = useForm({ defaultValues: { location } });
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -84,7 +84,7 @@ function Step2() {
               <div className="rounded-full h-36 w-36 border-dashed border-2 border-gray-300 flex items-center justify-center">
                 {selectedImage && (
                   <img
-                    src={URL.createObjectURL(selectedImage)}
+                    src={URL.createObjectURL(avatar)}
                     alt="Selected"
                     className="overflow-hidden h-36 w-36 rounded-full"
                   />
