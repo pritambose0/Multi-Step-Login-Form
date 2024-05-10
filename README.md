@@ -16,7 +16,7 @@
 ## Installation:
 
 1. Clone the repository: `git clone https://github.com/your/repository.git`
-2. Navigate to the project directory: `cd multi-step-form-react`
+2. Navigate to the project directory: `cd multi-step-login-form`
 3. Install dependencies: `npm install`
 
 ## Usage:
